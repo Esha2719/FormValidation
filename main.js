@@ -45,24 +45,6 @@ email.addEventListener('blur', ()=>{
     }
 })
 
-phone.addEventListener('blur', ()=>{
-    console.log('Phone is blured')
-    // Validating Phone
-    let regex = /^[6789]([0-9]){9}$/;
-    let str = phone.value;
-    console.log(regex, str);
-    let validate =  regex.test(str);
-    if (validate) {
-        console.log('your phone is validated');
-        phone.classList.remove('is-invalid');
-        phoneValidation = true;
-    } else {
-        console.log('your phone is Invalid')
-        phone.classList.add('is-invalid');
-        phoneValidation = false;
-    }
-})
-
 let message = document.getElementById('message');
 
 let submit = document.getElementById('submit');
