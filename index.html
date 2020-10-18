@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Welcome to Garuda Travel Desk</title>
+</head>
+
+<body>
+    <div id="message">
+
+    </div>
+    <div class="container">
+        <h1>Garuda Travel Desk</h1>
+        <div class="container-fluid my-3">
+            <form>
+                <div class="form-group">
+                    <label for="name">Enter your Name</label>
+                    <input type="text" class="form-control" id="name"
+                        placeholder="Enter your Name" required>
+                        <small id="invalidName" class="invalid-feedback">
+                            Invalid Username, Please enter a vaild username
+                        </small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter your Email</label>
+                    <input type="text" class="form-control" id="email"
+                        placeholder="Enter your Email" required>
+                        <small id="invalidEmail" class="invalid-feedback">
+                            Invalid Email, Please enter a vaild email
+                        </small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Enter your Contact Number</label>
+                    <input type="text" class="form-control" id="phone"
+                        placeholder="Enter your Phone Number" required>
+                        <small id="invalidPhone" class="invalid-feedback ">
+                            Invalid Phone Number, Please enter a vaild Phone Number consisting 10 number.
+                        </small>
+                </div>
+                <div class="form-group">
+                    <label for="car">Select your Car</label>
+                    <select class="form-control" id="car">
+                        <option>Maruti Suzuki Ertiga</option>
+                        <option>Chevrolet Tavera</option>
+                        <option>Force Toofan</option>
+                        <option>Toyota Fortuner</option>
+                        <option>Hyundai i20</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Enter your Address</label>
+                    <textarea class="form-control" id="address" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="queries">Any Queries</label>
+                    <textarea class="form-control" id="queries" rows="3"></textarea>
+                </div>
+                <button id="submit"class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
