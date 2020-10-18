@@ -2,11 +2,11 @@ console.log('Garuda Travels');
 
 let username = document.getElementById('name');
 let email = document.getElementById('email');
-let phone = document.getElementById('phone');
+
 
 let nameValidation = false;
 let emailValidation = false;
-let phoneValidation = false;
+
 
 //we can also use blur event listener blur will work when we click in th box and then the outside of the box
 username.addEventListener('input', ()=>{
@@ -49,10 +49,8 @@ let message = document.getElementById('message');
 
 let submit = document.getElementById('submit');
 submit.addEventListener('click', ()=>{
-    console.log('You clicked on submit');
-    if (nameValidation && emailValidation && phoneValidation) {
+    if (nameValidation && emailValidation) {
         //Submit you form
-        console.log(nameValidation, emailValidation, phoneValidation);
         message.innerHTML = `<div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
                                 <strong>Success!</strong> Your travel request has been successfully submited. 
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
