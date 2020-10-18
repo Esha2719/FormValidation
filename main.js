@@ -2,11 +2,11 @@ console.log('Garuda Travels');
 
 let username = document.getElementById('name');
 let email = document.getElementById('email');
-
+let phone = document.getElementById('phone');
 
 let nameValidation = false;
 let emailValidation = false;
-
+let phoneValidation = false;
 
 //we can also use blur event listener blur will work when we click in th box and then the outside of the box
 username.addEventListener('input', ()=>{
@@ -45,11 +45,29 @@ email.addEventListener('blur', ()=>{
     }
 })
 
+phone.addEventListener('blur', ()=>{
+    console.log('Phone is blured')
+    // Validating Phone
+    let regex = /^[6789]([0-9]){9}$/;
+    let str = phone.value;
+    console.log(regex, str);
+    let validate =  regex.test(str);
+    if (validate) {
+        console.log('your phone is validated');
+        phone.classList.remove('is-invalid');
+        phoneValidation = true;
+    } else {
+        console.log('your phone is Invalid')
+        phone.classList.add('is-invalid');
+        phoneValidation = false;
+    }
+})
+
 let message = document.getElementById('message');
 
 let submit = document.getElementById('submit');
 submit.addEventListener('click', ()=>{
-    if (nameValidation && emailValidation) {
+    if (nameValidation && emailValidation && phoneValidation) {
         //Submit you form
         message.innerHTML = `<div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
                                 <strong>Success!</strong> Your travel request has been successfully submited. 
